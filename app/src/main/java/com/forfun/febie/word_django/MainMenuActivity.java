@@ -26,7 +26,6 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.but4x4:
-            v.setBackgroundColor(540);
             Intent intent = new Intent(this, Game_4x4.class);
             startActivity(intent);break;
         }
