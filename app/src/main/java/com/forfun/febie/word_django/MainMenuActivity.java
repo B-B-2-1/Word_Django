@@ -35,7 +35,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
                 Intent intent = new Intent(this,Game_3x3.class);
                 startActivity(intent);break;
             case R.id.but4x4:
-                Intent intent = new Intent(this, Game_4x4.class);
+                intent = new Intent(this, Game_4x4.class);
                 startActivity(intent);break;
         }
 

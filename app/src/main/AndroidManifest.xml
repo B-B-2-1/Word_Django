@@ -23,7 +23,7 @@
             android:theme="@style/Notitle"></activity>
         <activity android:name=".Game_4x4"
             android:theme="@style/Notitle"></activity>
-        <activity android:name=".Game_3x3"></activity>
+
     </application>
 
 </manifest>
