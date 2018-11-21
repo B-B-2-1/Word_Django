@@ -20,10 +20,11 @@
         </activity>
         <activity
             android:name=".Game_3x3"
-            android:theme="@style/Notitle"></activity>
-        <activity android:name=".Game_4x4"
-            android:theme="@style/Notitle"></activity>
-
+            android:theme="@style/Notitle" />
+        <activity
+            android:name=".Game_4x4"
+            android:theme="@style/Notitle" />
+        <activity android:name=".Game_5x5"></activity>
     </application>
 
 </manifest>

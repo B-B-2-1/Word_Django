@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.forfun.febie.word_django.Game_5x5">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+
+            android:id="@+id/but_21_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            />
+        <Button
+            android:id="@+id/but_22_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@+id/but_21_five"/>
+        <Button
+            android:id="@+id/but_23_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toEndOf="@+id/but_22_five" />
+        <Button
+            android:id="@+id/but_24_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@id/but_23_five"/>
+        <Button
+            android:id="@+id/but_25_four"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@id/but_24_five"/>
+
+        /////////////////////////////////////////////////////////////////////row 1 over
+
+        <Button
+            android:id="@+id/but_16_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/but_21_five"
+            />
+        <Button
+            android:id="@+id/but_17_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@id/but_16_five"
+            android:layout_below="@id/but_21_five"/>
+        <Button
+            android:id="@+id/but_18_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@id/but_17_five"
+            android:layout_below="@id/but_21_five"/>
+        <Button
+            android:id="@+id/but_19_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@id/but_18_five"
+            android:layout_below="@id/but_21_five"/>
+        <Button
+            android:id="@+id/but_20_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@id/but_19_five"
+            android:layout_below="@id/but_21_five"/>
+
+
+        ////////////////////////////////////////////////////////////////2nd row over
+
+        <Button
+            android:id="@+id/but_11_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/but_16_five"
+            />
+        <Button
+            android:id="@+id/but_12_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@id/but_11_five"
+            android:layout_below="@id/but_16_five"/>
+        <Button
+            android:id="@+id/but_13_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@id/but_12_five"
+            android:layout_below="@id/but_16_five"/>
+        <Button
+            android:id="@+id/but_14_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@id/but_13_five"
+            android:layout_below="@id/but_16_five"/>
+        <Button
+            android:id="@+id/but_15_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@id/but_14_five"
+            android:layout_below="@id/but_16_five"/>
+
+        ///////////////////////////////////////////////////////////////////row 3 over
+
+        <Button
+            android:id="@+id/but_6_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/but_11_five"
+            />
+        <Button
+            android:id="@+id/but_7_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@id/but_6_five"
+            android:layout_below="@id/but_11_five"/>
+        <Button
+            android:id="@+id/but_8_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@id/but_7_five"
+            android:layout_below="@id/but_11_five"/>
+        <Button
+            android:id="@+id/but_9_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@id/but_8_five"
+            android:layout_below="@id/but_11_five"/>
+        <Button
+            android:id="@+id/but_10_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@id/but_9_five"
+            android:layout_below="@id/but_11_five"/>
+
+//////////////////////////////////////////////////////////////////////////////////////// ro4 4 over
+
+        <Button
+            android:id="@+id/but_1_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/but_6_five"
+            />
+        <Button
+            android:id="@+id/but_2_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@id/but_1_five"
+            android:layout_below="@id/but_6_five"/>
+        <Button
+            android:id="@+id/but_3_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@id/but_2_five"
+            android:layout_below="@id/but_6_five"/>
+        <Button
+            android:id="@+id/but_4_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@id/but_3_five"
+            android:layout_below="@id/but_6_five"/>
+        <Button
+            android:id="@+id/but_5_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@id/but_4_five"
+            android:layout_below="@id/but_6_five"/>
+        ////////////////////////////////////////////////////////////row 5 over
+    </RelativeLayout>
+
+</FrameLayout>
