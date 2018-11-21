@@ -8,9 +8,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name=".MainMenuActivity"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainMenuActivity"
             android:theme="@style/Notitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +19,7 @@
         </activity>
         <activity android:name=".Game_4x4"
             android:theme="@style/Notitle"></activity>
+        <activity android:name=".Game_3x3"></activity>
     </application>
 
 </manifest>
