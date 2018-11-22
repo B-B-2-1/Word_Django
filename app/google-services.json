@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "129883662889",
+    "firebase_url": "https://worddjango-15fc1.firebaseio.com",
+    "project_id": "worddjango-15fc1",
+    "storage_bucket": "worddjango-15fc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129883662889:android:42f795954ff3c099",
+        "android_client_info": {
+          "package_name": "com.forfun.febie.word_django"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129883662889-brfu5ckoe1j1n4dfsbbpjgb0hpl4upqq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.forfun.febie.word_django",
+            "certificate_hash": "4a1183481a05ec27f288c54645088d0362f3eac7"
+          }
+        },
+        {
+          "client_id": "129883662889-f11fmnucjt2tbfvdm3lb8gtukhman30s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpXdMDBz8XCM14f6i8xakIyhHno4EKhV4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129883662889-f11fmnucjt2tbfvdm3lb8gtukhman30s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
