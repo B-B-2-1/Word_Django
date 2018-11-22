@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.forfun.febie.word_django" >
+    package="com.forfun.febie.word_django">
 
     <application
         android:allowBackup="true"
@@ -8,8 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name=".MainMenuActivity"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainMenuActivity"
             android:theme="@style/Notitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,6 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Game_3x3"
+            android:theme="@style/Notitle" />
+        <activity
+            android:name=".Game_4x4"
+            android:theme="@style/Notitle" />
+        <activity android:name=".Game_5x5"
+            android:theme="@style/Notitle"></activity>
     </application>
 
 </manifest>

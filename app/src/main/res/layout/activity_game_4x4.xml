@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.forfun.febie.word_django.Game_4x4">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <Button
+
+        android:id="@+id/but_13_four"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        />
+    <Button
+        android:id="@+id/but_14_four"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_toRightOf="@+id/but_13_four"/>
+    <Button
+        android:id="@+id/but_15_four"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/but_14_four" />
+    <Button
+        android:id="@+id/but_16_four"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_toRightOf="@id/but_15_four"/>
+
+    /////////////////////////////////////////////////////////////////////row 1 over
+
+    <Button
+        android:id="@+id/but_9_four"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/but_13_four"
+        />
+    <Button
+        android:id="@+id/but_10_four"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_toRightOf="@id/but_13_four"
+        android:layout_below="@id/but_14_four"/>
+    <Button
+        android:id="@+id/but_11_four"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/but_14_four"
+        android:layout_toRightOf="@id/but_10_four"/>
+    <Button
+        android:id="@+id/but_12_four"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/but_15_four"
+        android:layout_toRightOf="@id/but_11_four"/>
+
+    ////////////////////////////////////////////////////////////////2nd row over
+
+    <Button
+        android:id="@+id/but_5_four"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/but_12_four"/>
+    <Button
+        android:id="@+id/but_6_four"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/but_10_four"
+        android:layout_toRightOf="@id/but_5_four"/>
+    <Button
+        android:id="@+id/but_7_four"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/but_10_four"
+        android:layout_toRightOf="@id/but_6_four"/>
+    <Button
+        android:id="@+id/but_8_four"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/but_10_four"
+        android:layout_toRightOf="@id/but_7_four"/>
+
+    ///////////////////////////////////////////////////////////////////row 3 over
+
+    <Button
+        android:id="@+id/but_1_four"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/but_5_four"/>
+    <Button
+        android:id="@+id/but_2_four"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/but_5_four"
+        android:layout_toRightOf="@id/but_1_four"
+        />
+    <Button
+        android:id="@+id/but_3_four"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/but_5_four"
+        android:layout_toRightOf="@id/but_2_four"
+        />
+    <Button
+        android:id="@+id/but_4_four"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/but_5_four"
+        android:layout_toRightOf="@id/but_3_four"
+        />
+
+
+
+</RelativeLayout>
+
+</FrameLayout>
