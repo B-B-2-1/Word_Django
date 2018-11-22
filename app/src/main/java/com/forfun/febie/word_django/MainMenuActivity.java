@@ -19,6 +19,9 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.activity_main_menu);
 
         ///////////////////////////////////////////////////////////////
+        TinyDB tinydb = new TinyDB(this);
+
+        ///////////////////////////////////////////////////////////////
         Button button3x3=findViewById(R.id.but3x3);
         button3x3.setOnClickListener(this);
         Button button4x4=(Button) findViewById(R.id.but4x4);
