@@ -39,6 +39,30 @@
 
 </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/but_settings"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:text="S"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/but_leaderboard"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:text="L"
+            android:textStyle="bold"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
 
 
 

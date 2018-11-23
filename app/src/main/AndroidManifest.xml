@@ -24,8 +24,10 @@
         <activity
             android:name=".Game_4x4"
             android:theme="@style/Notitle" />
-        <activity android:name=".Game_5x5"
-            android:theme="@style/Notitle"></activity>
+        <activity
+            android:name=".Game_5x5"
+            android:theme="@style/Notitle" />
+        <activity android:name=".LeaderBoardActivity"></activity>
     </application>
 
 </manifest>
