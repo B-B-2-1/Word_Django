@@ -16,9 +16,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
-        //////////////////////////////////////////////////////////////Tinydb
-        TinyDB tinyDB = new TinyDB(this);
-        tinyDB.putString("Playername","BIBIN");
+
 
         //////////////////////////////////////////////////////////////
 
@@ -48,7 +46,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
                 intent = new Intent(this,Game_5x5.class);
                 startActivity(intent);break;
             case R.id.but_leaderboard:
-                intent = new Intent(this,LeaderBoardActivity.class);
+                intent = new Intent(this,Leaderboard.class);
                 startActivity(intent);break;
         }
 

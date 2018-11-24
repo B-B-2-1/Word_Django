@@ -13,12 +13,7 @@
             android:id="@+id/username_signup"
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:background="#f9f9f9"
             android:hint="Enter username"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            android:textColor="#55aabb"
-            android:textStyle="bold"
             />
         <Button
             android:id="@+id/but_signup"
