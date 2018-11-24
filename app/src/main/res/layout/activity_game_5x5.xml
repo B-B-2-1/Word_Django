@@ -28,6 +28,7 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/HintLayout"
             android:layout_width="50dp"
             android:layout_height="290dp"
             android:orientation="vertical"

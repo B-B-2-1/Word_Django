@@ -1,10 +1,13 @@
 package com.forfun.febie.word_django;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Handler;
+import android.support.annotation.DimenRes;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,6 +18,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.tooltip.Tooltip;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -24,6 +28,13 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        Tooltip tooltip = new Tooltip.Builder(findViewById(R.id.materialtextfield))
+                .setText("This will be your username for listing in the Leaderboard")
+                .setBackgroundColor(Color.GREEN)
+                .setDismissOnClick(true)
+                .setCornerRadius(2f).setGravity(Gravity.TOP)
+                .show();
 
         tinyDB = new TinyDB(this);
 
@@ -57,6 +68,8 @@ public class LoginActivity extends AppCompatActivity {
 
                             ref5.child(signupName.getText().toString() + "/score").setValue(0);
                             ref5.child(signupName.getText().toString() + "/name").setValue(signupName.getText().toString());
+
+                            Toast.makeText(LoginActivity.this, "Welcome "+signupName.getText().toString(), Toast.LENGTH_SHORT).show();
 
                             final Handler handler = new Handler();
                             handler.postDelayed(new Runnable() {
