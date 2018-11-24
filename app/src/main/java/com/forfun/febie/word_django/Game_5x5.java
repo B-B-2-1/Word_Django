@@ -2,11 +2,12 @@ package com.forfun.febie.word_django;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class Game_5x5 extends AppCompatActivity {
 
     TinyDB tinyDB;                                                   //Declaring tinyDb object
-    int hiscore3x3;
+    int highscore,score=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +17,8 @@ public class Game_5x5 extends AppCompatActivity {
         ///////////////////////////////////////////////////////////////Initializing tinyDB object
 
         tinyDB = new TinyDB(this);
-        hiscore3x3=tinyDB.getInt("hiscore3x3");
+        highscore=tinyDB.getInt("highscore5x5");
+        TextView HighscoreTextView=findViewById(R.id.TV_highscore);
+        HighscoreTextView.setText(Integer.toString(highscore));
     }
 }
