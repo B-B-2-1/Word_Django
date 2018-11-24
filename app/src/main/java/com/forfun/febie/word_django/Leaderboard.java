@@ -20,7 +20,7 @@ import java.util.Iterator;
 
 public class Leaderboard extends AppCompatActivity implements View.OnClickListener {
 
-    public void initializeScoreBoardWith(String whichscoreboard)
+    public void initializeScoreBoardWith(String whichscoreboard,String heading)
     {
         final TinyDB tinyDB = new TinyDB(this);
         final String Playername=tinyDB.getString("Playername");
@@ -30,7 +30,7 @@ public class Leaderboard extends AppCompatActivity implements View.OnClickListen
         final DatabaseReference ref = database.getReference(whichscoreboard);
 
         TextView headingTextview = findViewById(R.id.TV_leaderboardHeading);
-        headingTextview.setText("3x3 Leaderboard");
+        headingTextview.setText(heading);
 
 
         ////////////////////////////////////////////////////////////////////////////////////////////
@@ -89,7 +89,7 @@ public class Leaderboard extends AppCompatActivity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leaderboard);
 
-        initializeScoreBoardWith("UserScore/3x3");
+        initializeScoreBoardWith("UserScore/3x3","3x3 Leaderboard");
 
         Button x3Leaderboardbutton= findViewById(R.id.but_to_3x3_leaderboard);
         x3Leaderboardbutton.setOnClickListener(this);
@@ -106,11 +106,11 @@ public class Leaderboard extends AppCompatActivity implements View.OnClickListen
         switch (v.getId())
         {
             case R.id.but_to_3x3_leaderboard:
-                initializeScoreBoardWith("UserScore/3x3");break;
+                initializeScoreBoardWith("UserScore/3x3","3x3 LeaderBoard");break;
             case R.id.but_to_4x4_leaderboard:
-                initializeScoreBoardWith("UserScore/4x4");break;
+                initializeScoreBoardWith("UserScore/4x4","4x4 LeaderBoard");break;
             case R.id.but_to_5x5_leaderboard:
-                initializeScoreBoardWith("UserScore/5x5");break;
+                initializeScoreBoardWith("UserScore/5x5","5x5 LeaderBoard");break;
         }
 
     }
