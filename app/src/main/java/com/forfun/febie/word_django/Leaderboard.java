@@ -17,6 +17,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.HashMap;
 import java.util.Iterator;
 
+import spencerstudios.com.bungeelib.Bungee;
+
 
 public class Leaderboard extends AppCompatActivity implements View.OnClickListener {
 
@@ -103,6 +105,12 @@ public class Leaderboard extends AppCompatActivity implements View.OnClickListen
         x5Leaderboardbutton.setOnClickListener(this);
 
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Bungee.split(this);
     }
 
     @Override

@@ -23,17 +23,23 @@
     <Button
         android:id="@+id/but3x3"
         android:layout_width="200dp"
-        android:layout_height="60dp" />
+        android:layout_height="60dp"
+        android:text="3x3"
+        android:gravity="center"/>
     <Button
         android:id="@+id/but4x4"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
+        android:text="4x4"
+        android:gravity="center"
         android:layout_marginBottom="30dp"/>
     <Button
         android:id="@+id/but5x5"
         android:layout_width="200dp"
+        android:text="5x5"
+        android:layout_gravity="center"
         android:layout_height="60dp"
         />
 

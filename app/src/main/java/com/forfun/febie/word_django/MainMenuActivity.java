@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import spencerstudios.com.bungeelib.Bungee;
+
 
 public class MainMenuActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -38,16 +40,20 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
             case R.id.but3x3:
 
                 Intent intent = new Intent(this,Game_3x3.class);
-                startActivity(intent);break;
+                startActivity(intent);
+                Bungee.shrink(this);break;
             case R.id.but4x4:
                 intent = new Intent(this, Game_4x4.class);
-                startActivity(intent);break;
+                startActivity(intent);
+                Bungee.shrink(this);break;
             case R.id.but5x5:
                 intent = new Intent(this,Game_5x5.class);
-                startActivity(intent);break;
+                startActivity(intent);
+                Bungee.shrink(this);break;
             case R.id.but_leaderboard:
                 intent = new Intent(this,Leaderboard.class);
-                startActivity(intent);break;
+                startActivity(intent);
+                Bungee.split(this);break;
         }
 
     }
