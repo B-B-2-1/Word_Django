@@ -31,6 +31,8 @@ public class Leaderboard extends AppCompatActivity implements View.OnClickListen
 
         TextView headingTextview = findViewById(R.id.TV_leaderboardHeading);
         headingTextview.setText(heading);
+        final TextView loadingTV = findViewById(R.id.Loading);
+        loadingTV.setVisibility(View.VISIBLE);
 
 
         ////////////////////////////////////////////////////////////////////////////////////////////
@@ -72,6 +74,8 @@ public class Leaderboard extends AppCompatActivity implements View.OnClickListen
                 PlayerPosition_textview.setText(PlayerPositionString);
                 TextView Top3_textview = findViewById(R.id.TV_top3);
                 Top3_textview.setText(Top3PosString);
+
+                loadingTV.setVisibility(View.INVISIBLE);
             }
 
             @Override

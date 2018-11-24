@@ -29,7 +29,9 @@ public class LoginActivity extends AppCompatActivity {
 
 
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference ref = database.getReference("UserScore/test");
+        final DatabaseReference ref3 = database.getReference("UserScore/3x3");
+        final DatabaseReference ref4 = database.getReference("UserScore/4x4");
+        final DatabaseReference ref5 = database.getReference("UserScore/5x5");
 
         final EditText signupName = findViewById(R.id.username_signup);
         Button but_usernameOk = findViewById(R.id.but_signup);
@@ -37,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 final String username_new = signupName.getText().toString();
-                ref.addListenerForSingleValueEvent(new ValueEventListener() {
+                ref3.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         if (dataSnapshot.hasChild(username_new))
@@ -47,8 +49,14 @@ public class LoginActivity extends AppCompatActivity {
                         else {
                             tinyDB.putString("Playername", username_new);
 
-                            ref.child(signupName.getText().toString() + "/score").setValue(Integer.toString(0));
-                            ref.child(signupName.getText().toString() + "/name").setValue(signupName.getText().toString());
+                            ref3.child(signupName.getText().toString() + "/score").setValue(0);
+                            ref3.child(signupName.getText().toString() + "/name").setValue(signupName.getText().toString());
+
+                            ref4.child(signupName.getText().toString() + "/score").setValue(0);
+                            ref4.child(signupName.getText().toString() + "/name").setValue(signupName.getText().toString());
+
+                            ref5.child(signupName.getText().toString() + "/score").setValue(0);
+                            ref5.child(signupName.getText().toString() + "/name").setValue(signupName.getText().toString());
 
                             final Handler handler = new Handler();
                             handler.postDelayed(new Runnable() {

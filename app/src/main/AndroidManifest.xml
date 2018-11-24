@@ -30,9 +30,6 @@
         <activity
             android:name=".MainMenuActivity"
             android:theme="@style/Notitle" />
-        <activity
-            android:name=".LeaderBoardActivity"
-            android:theme="@style/Notitle" />
         <activity android:name=".LoginActivity"
             android:theme="@style/Notitle"/>
         <activity android:name=".Leaderboard"
