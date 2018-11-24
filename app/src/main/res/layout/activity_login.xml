@@ -8,18 +8,29 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center">
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        >
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_marginTop="150dp"
+            android:id="@+id/materialtextfield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:mtf_labelColor="#666"
+            app:mtf_image="@drawable/usericon">
         <EditText
+            android:layout_gravity="center_horizontal"
             android:id="@+id/username_signup"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:hint="Enter username"
             />
+        </com.github.florent37.materialtextfield.MaterialTextField>
         <Button
             android:id="@+id/but_signup"
             android:layout_width="80dp"
             android:layout_height="50dp"
-            android:layout_below="@+id/username_signup"
+            android:layout_below="@+id/materialtextfield"
             android:layout_centerHorizontal="true"
             android:text="OKey"
             />
