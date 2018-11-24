@@ -4,6 +4,8 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -15,21 +17,17 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.HashMap;
 import java.util.Iterator;
 
-public class Leaderboard extends AppCompatActivity {
 
+public class Leaderboard extends AppCompatActivity implements View.OnClickListener {
 
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_leaderboard);
-
+    public void initializeScoreBoardWith(String whichscoreboard)
+    {
         final TinyDB tinyDB = new TinyDB(this);
         final String Playername=tinyDB.getString("Playername");
         Log.d("Playername", Playername);
 
         final FirebaseDatabase database = FirebaseDatabase.getInstance();                           //Firebase
-        final DatabaseReference ref = database.getReference("UserScore/3x3");
+        final DatabaseReference ref = database.getReference(whichscoreboard);
 
         TextView headingTextview = findViewById(R.id.TV_leaderboardHeading);
         headingTextview.setText("3x3 Leaderboard");
@@ -82,6 +80,38 @@ public class Leaderboard extends AppCompatActivity {
             }
         });
         ////////////////////////////////////////////////////////////////////////////////////////////
+    }
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_leaderboard);
+
+        initializeScoreBoardWith("UserScore/3x3");
+
+        Button x3Leaderboardbutton= findViewById(R.id.but_to_3x3_leaderboard);
+        x3Leaderboardbutton.setOnClickListener(this);
+        Button x4Leaderboardbutton= findViewById(R.id.but_to_4x4_leaderboard);
+        x4Leaderboardbutton.setOnClickListener(this);
+        Button x5Leaderboardbutton= findViewById(R.id.but_to_5x5_leaderboard);
+        x5Leaderboardbutton.setOnClickListener(this);
+
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId())
+        {
+            case R.id.but_to_3x3_leaderboard:
+                initializeScoreBoardWith("UserScore/3x3");break;
+            case R.id.but_to_4x4_leaderboard:
+                initializeScoreBoardWith("UserScore/4x4");break;
+            case R.id.but_to_5x5_leaderboard:
+                initializeScoreBoardWith("UserScore/5x5");break;
+        }
 
     }
 }
