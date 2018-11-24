@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.forfun.febie.word_django.LeaderBoardActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/but_FireBase"
+            android:hint="Name" />
+        <EditText
+            android:id="@+id/edit_score"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/edit_name"
+            android:hint="score" />
+
+        <Button
+            android:id="@+id/but_FireBase"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:text="FB" />
+
+        <Button
+            android:id="@+id/but_FireRetrieve"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="get"
+            android:layout_above="@+id/edit_name"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@+id/but_FireBase" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/but_to_3x3_leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3x3"
+        android:layout_gravity="center_vertical"/>
+    <Button
+        android:id="@+id/but_to_4x4_leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4x4"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="300dp"/>
+
+</FrameLayout>
